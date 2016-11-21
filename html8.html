@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Autocomplete Form</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/main.css"/>
+  </head>
+  <body>
+  
+  <div id="addressField">
+  <input id="autocomplete" type="text" placeholder="enter your address here yo!" onFocus="pottyLocate()"></input>
+  </div>
+
+
+<div id="container">
+  <table id="addressTable">
+      <tr>
+        <td class="label">Street address</td>
+        <td class="slimField"><input class="field" id="street_number"
+              disabled="true"></input></td>
+        <td class="wideField" colspan="2"><input class="field" id="route"
+              disabled="true"></input></td>
+      </tr>
+      <tr>
+        <td class="label">City</td>
+        <td class="wideField" colspan="3"><input class="field" id="locality"
+              disabled="true"></input></td>
+      </tr>
+      <tr>
+        <td class="label">State</td>
+        <td class="slimField"><input class="field"
+              id="administrative_area_level_1" disabled="true"></input></td>
+        <td class="label">Zip code</td>
+        <td class="wideField"><input class="field" id="postal_code"
+              disabled="true"></input></td>
+      </tr>
+      <tr>
+        <td class="label">Country</td>
+        <td class="wideField" colspan="3"><input class="field"
+              id="country" disabled="true"></input></td>
+      </tr>
+  </table>    
+</div>
+
+
+
+
+
+  <h3>Potty Map with Marker</h3>
+  <div id="map"></div>
+ 
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIpSrdHM9RhwhUMEXaUeU7K9Y-xVRjrxI&callback=initAutocomplete&libraries=places" defer></script>
+    <script src="scripts/app.js"></script>
+
+  </body>
+</html>
+
+
+
+
+
+
