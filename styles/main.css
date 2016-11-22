@@ -9,7 +9,7 @@ html, body {
 	margin: 0px;
 	padding: 0px
 }
-#addressField {
+.addressField {
 	font-size: 36px;
 	padding: 10px;
 	margin: 0 auto;

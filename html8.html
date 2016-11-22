@@ -9,11 +9,164 @@
   <body>
   
   <div id="addressField">
-  <input id="autocomplete" type="text" placeholder="enter your address here yo!" onFocus="pottyLocate()"></input>
+  <input id="autocomplete" type="text" placeholder="locationName" onFocus="pottyLocate()"></input>
   </div>
 
 
-<div id="container">
+<!--   <div id="addressField">
+  <input id="autocomplete" type="text" placeholder="enter your address here yo!" onFocus="pottyLocate()"></input>
+  </div> -->
+
+
+<h1>Your Restroom Post</h1>
+
+<h2>this is the /create page</h2>
+<form ng-submit="createPost(facility_name, address, publicly_accessible, cleanliness, family_friendly, gender)">
+  <div class="row">
+
+
+ <!--      <tr>
+        <td class="label">Location address</td>
+        <td class="slimField">
+        <input class="field" id="street_number" disabled="true"></input></td>
+
+        <td class="wideField">
+        <input class="field" id="route" disabled="true" ng-model="facility_name"></input></td>
+      </tr> -->
+
+    <tr>
+        <td class="label">Location name</td>
+      <td class="slimField"><input class="field" id="" disabled="true"></input></td>
+
+        <td class="wideField" ><input class="field" id="route" disabled="true" ng-model="facility_name"></input></td>
+      </tr>
+
+      <tr>
+        <td class="label">Location address</td>
+        <td class="slimField"><input class="field" id="street_number" disabled="true"></input></td>
+
+        <td class="wideField" ><input class="field" id="route" disabled="true" ng-model="address"></input></td>
+      </tr>
+
+      <tr>
+        <td class="label">City</td>
+        <td class="wideField" colspan="3"><input class="field" id="locality" disabled="true"></input></td>
+      </tr>
+      
+      <tr>
+        <td class="label">State</td>
+        <td class="slimField"><input class="field" id="administrative_area_level_1" disabled="true"></input></td>
+
+
+        <td class="label">Zip code</td>
+        <td class="wideField"><input class="field" id="postal_code" disabled="true"></input></td>
+      </tr>
+     
+  
+
+
+<!--      <div class="four columns">
+      <label for="facility-name">Location Name</label>
+      <input class="u-full-width" type="text" ng-model="facility_name" placeholder="Location Name">
+    </div>
+
+     <div class="three columns">
+      <label for="addresses">Where's Your Location</label>
+      <input class="u-full-width" type="text" ng-model="address" placeholder="Where's Your Location">
+    </div>
+
+    <div >
+      <label for="addresses">Where's Your Location</label>
+      <input class="u-full-width" type="text" ng-model="address" placeholder="Where's Your Location">
+    </div> -->
+
+
+
+
+ <!--   <label for="latitudes"></label> -->
+    <div>
+      <input type="hidden" ng-model="latitude">
+    </div>
+
+    <div>
+    <!--   <label for="longitudes"></label> -->
+      <input type="hidden" ng-model="longitude">
+    </div>
+
+
+    <div class="three columns">
+      <label for="publicaccessibility">Is This Publicly Accessible?</label>
+      <select class="u-full-width" type="text" ng-model="publicly_accessible">
+          <option value="Yes">yes</option>
+          <option value="No">no</option>
+      </select>   
+    </div>
+    
+    <div class="three columns">
+      <label for="cleanliness">How Clean Is It?</label>
+      <select class="u-full-width" type="text" ng-model="cleanliness">
+        <option value="1">very dirty</option>
+        <option value="2">somewhat dirty</option>
+        <option value="3">neither clean nor dirty</option>
+        <option value="4">somewhat clean</option>
+        <option value="5">very clean</option>
+      </select>   
+    </div>
+    
+    <div class="three columns">
+      <label for="familyfriendly">Is This Family Friendly?</label>
+      <select class="u-full-width" type="text" ng-model="family_friendly">
+        <option value="Yes">yes</option>
+        <option value="No">no</option>
+      </select>   
+    </div>
+    
+   <div class="three columns">
+      <label for="gender">Is This Gender Specific?</label>
+      <select class="u-full-width" type="text" ng-model="gender">
+        <option value="Yes">yes</option>
+        <option value="No">no</option>
+      </select>   
+    </div>
+
+     <div>
+    <!--   <label for="user_submissions"></label> -->
+      <input type="hidden" ng-model="user_submission">
+    </div>
+   
+    <input class="button button-primary" type="submit" value="Add Post">
+
+      
+    </div> <!--end of div class=row-->
+
+
+
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div id="container">
   <table id="addressTable">
       <tr>
         <td class="label">Street address</td>
@@ -41,7 +194,7 @@
               id="country" disabled="true"></input></td>
       </tr>
   </table>    
-</div>
+</div> -->
 
 
 
